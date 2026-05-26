@@ -19,4 +19,9 @@ public class ChatController {
         return "chat";
     }
 
+    @GetMapping("/")
+    public String root(){
+        return "redirect:/chat";
+    }
+
 }
